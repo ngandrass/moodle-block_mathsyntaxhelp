@@ -29,6 +29,8 @@ defined('MOODLE_INTERNAL') || die(); // @codeCoverageIgnore
 
 // General.
 $string['pluginname'] = 'Math Syntax Help';
+$string['math_expression'] = 'Math Expression';
+$string['input_syntax'] = 'Input Syntax';
 
 // Capabilities.
 $string['mathsyntaxhelp:addinstance'] = 'Add a new math syntax help block';

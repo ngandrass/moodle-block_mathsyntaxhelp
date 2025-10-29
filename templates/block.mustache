@@ -34,11 +34,19 @@
     }
 }}
 
-<table>
-    {{#content}}
+<table class="table table-hover">
+    <thead>
         <tr>
-            <td>{{{mathjax}}}</td>
-            <td>{{{syntax}}}</td>
+            <th scope="col" class="border-top-0">{{#str}} math_expression, block_mathsyntaxhelp {{/str}}</th>
+            <th scope="col" class="border-top-0">{{#str}} input_syntax, block_mathsyntaxhelp {{/str}}</th>
         </tr>
-    {{/content}}
+    </thead>
+    <tbody>
+        {{#content}}
+            <tr>
+                <td>{{{mathjax}}}</td>
+                <td>{{{syntax}}}</td>
+            </tr>
+        {{/content}}
+    </tbody>
 </table>
