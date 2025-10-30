@@ -39,4 +39,4 @@ $string['mathsyntaxhelp:myaddinstance'] = 'Add a new math syntax help block to t
 
 // Settings.
 $string['setting_defaultcontent'] = 'Default content';
-$string['setting_defaultcontent_desc'] = 'The default content each new math syntax help block will be populated with initially. This can be changed for an individual block instance or left as the default.';
+$string['setting_defaultcontent_desc'] = 'The default content each math syntax help block will display unless customized. This can be changed for an individual block instance or left as the default. You can use the empty rows to add new values. If you need more rows, just save the current settings and aditional empty rows will appear. To remove entries simply empty the respective fields and the empty rows will be removed upon saving.';

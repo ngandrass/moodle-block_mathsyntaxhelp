@@ -79,18 +79,21 @@ class block_mathsyntaxhelp extends block_base {
     public function get_content() {
         global $OUTPUT;
 
+        // Check if content is already set.
         if ($this->content !== null) {
             return $this->content;
         }
 
+        // Build template context.
         $formulahelpdata = [];
-        foreach (json_decode(get_config('block_mathsyntaxhelp', 'defaultcontent')) as $mathjax => $syntax) {
+        foreach (json_decode(get_config('block_mathsyntaxhelp', 'defaultcontent')) as $entry) {
             $formulahelpdata[] = [
-                'mathjax' => format_text($mathjax),
-                'syntax' => $syntax,
+                'mathjax' => format_text($entry->out),
+                'syntax' => $entry->in,
             ];
         }
 
+        // Render content.
         $this->content = (object) [
             'text' => $OUTPUT->render_from_template(
                 'block_mathsyntaxhelp/block',
