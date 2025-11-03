@@ -89,7 +89,7 @@ class block_mathsyntaxhelp extends block_base {
         foreach ($this->get_entries() as $entry) {
             $formulahelpdata[] = [
                 'mathjax' => format_text($entry->out),
-                'syntax' => $entry->in,
+                'syntax' => format_text($entry->in),
             ];
         }
 
