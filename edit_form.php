@@ -43,6 +43,11 @@ class block_mathsyntaxhelp_edit_form extends block_edit_form {
         /** @var block_mathsyntaxhelp $block */
         $block = $this->get_block();
 
+        // Check if the user has the capability to customize block entries.
+        if (!has_capability('block/mathsyntaxhelp:customize', $block->context)) {
+            return;
+        }
+
         // Checkbox to enable/disable block entry customization.
         $customentriescheckbox = $mform->addElement(
             'advcheckbox',
@@ -114,10 +119,22 @@ class block_mathsyntaxhelp_edit_form extends block_edit_form {
      * if there is no submitted data.
      *
      * @return stdClass submitted data; NULL if not valid or not submitted or cancelled
+     * @throws block_not_on_page_exception
+     * @throws coding_exception
+     * @throws moodle_exception
      */
     public function get_data() {
         $data = parent::get_data();
 
+        // If the user does not have the capability to customize, ignore any custom entries.
+        if (!has_capability('block/mathsyntaxhelp:customize', $this->get_block()->context)) {
+            $data->config_usecustomentries = 0;
+            unset($data->raw_entry);
+
+            return $data;
+        }
+
+        // Process custom entries.
         if (isset($data->raw_entry)) {
             // Pop raw entries off the data object.
             $rawentries = $data->raw_entry;
