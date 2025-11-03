@@ -86,7 +86,7 @@ class block_mathsyntaxhelp extends block_base {
 
         // Build template context.
         $formulahelpdata = [];
-        foreach (json_decode(get_config('block_mathsyntaxhelp', 'defaultcontent')) as $entry) {
+        foreach ($this->get_entries() as $entry) {
             $formulahelpdata[] = [
                 'mathjax' => format_text($entry->out),
                 'syntax' => $entry->in,
@@ -103,5 +103,34 @@ class block_mathsyntaxhelp extends block_base {
         ];
 
         return $this->content;
+    }
+
+    /**
+     * Determines if this block instance has custom entries or relies on the global defaults.
+     *
+     * @return bool True if custom entries exist, false otherwise.
+     */
+    public function has_custom_entries(): bool {
+        if (!isset($this->config)) {
+            return false;
+        }
+
+        if (!isset($this->config->usecustomentries) || !isset($this->config->customentries)) {
+            return false;
+        }
+
+        return $this->config->usecustomentries == true && !empty($this->config->customentries);
+    }
+
+    /**
+     * Retrieves the syntax help entries for this block instance.
+     *
+     * @return array The array of syntax help entries with a shape of [{'out': '\( 42 * \pi \)', 'in': '42 * pi'}, ...].
+     * @throws dml_exception
+     */
+    public function get_entries(): array {
+        return $this->has_custom_entries()
+            ? json_decode($this->config->customentries)
+            : json_decode(get_config('block_mathsyntaxhelp', 'defaultcontent'));
     }
 }
