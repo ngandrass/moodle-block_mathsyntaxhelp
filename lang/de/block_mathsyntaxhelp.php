@@ -29,3 +29,17 @@ defined('MOODLE_INTERNAL') || die(); // @codeCoverageIgnore
 
 // General.
 $string['pluginname'] = 'Hilfe zur Formeleingabe';
+$string['entries'] = 'Einträge';
+$string['input_syntax'] = 'Eingabesyntax';
+$string['math_expression'] = 'Formel';
+
+// Capabilities.
+$string['mathsyntaxhelp:addinstance'] = 'Füge einen neuen Formeleingabehilfe-Block hinzu';
+$string['mathsyntaxhelp:customize'] = 'Erlaubt die Anpassung des Inhalts eines einzelnen Formeleingabehilfe-Blocks';
+$string['mathsyntaxhelp:myaddinstance'] = 'Füge einen neuen Formeleingabehilfe-Block zur Meine Moodle-Seite hinzu';
+
+// Settings.
+$string['customize_block_entries'] = 'Einträge dieses Blocks anpassen';
+$string['customize_block_entries_help'] = 'Wenn die lokale Anpassung aktiviert ist, zeigt diese einzelne Blockinstanz die unten konfigurierten Einträge anstelle der standardmäßigen Einträge an. Die leeren Zeilen können verwendet werden um neue Werte hinzuzufügen. Wenn mehr Zeilen benötigt werden, speichern Sie einfach die aktuellen Einträge und es werden danach zusätzliche leere Zeilen angezeigt. Um Einträge zu entfernen, leeren Sie die jeweiligen Felder. Die leeren Zeilen werden beim Speichern entfernt. Um zu den globalen Standardeinträgen zurückzukehren, deaktivieren Sie einfach die Anpassung mit dem obigen Kontrollkästchen und klicken Sie auf Speichern.';
+$string['setting_defaultcontent'] = 'Standardeinträge';
+$string['setting_defaultcontent_desc'] = 'Die Einträge, die jeder Formeleingabehilfe-Block standardmäßig anzeigt. Dies kann für eine einzelne Blockinstanz geändert oder als Standard belassen werden. Die leeren Zeilen können verwendet werden um neue Einträge hinzuzufügen. Wenn mehr Zeilen benötigt werden, speichern Sie einfach die aktuellen Einträge und es werden danach zusätzliche leere Zeilen angezeigt. Um Einträge zu entfernen, leeren Sie die jeweiligen Felder. Die leeren Zeilen werden beim Speichern entfernt.';
