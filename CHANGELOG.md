@@ -1,6 +1,6 @@
 # Changelog
 
-## Version X.Y.Z (YYYYMMDDNN)
+## Version 1.0.0 (2025110400)
 
 - Initial Release 🚀
 - Display math expressions alongside their input syntax as a convenient math syntax help block.
