@@ -14,7 +14,7 @@
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
-namespace block_mathsyntaxhelp\local\admin;
+namespace block_mathsyntaxhelp\local\admin\setting;
 
 use core\exception\moodle_exception;
 

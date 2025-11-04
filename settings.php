@@ -22,7 +22,7 @@
  * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-use block_mathsyntaxhelp\local\admin\admin_setting_syntaxtranslations;
+use block_mathsyntaxhelp\local\admin\setting\admin_setting_syntaxtranslations;
 
 // @codingStandardsIgnoreLine
 defined('MOODLE_INTERNAL') || die(); // @codeCoverageIgnore
