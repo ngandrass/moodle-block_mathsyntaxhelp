@@ -29,6 +29,30 @@ defined('MOODLE_INTERNAL') || die(); // @codeCoverageIgnore
 
 
 if ($hassiteconfig) {
+    // Entry table density.
+    $settings->add(new admin_setting_configselect(
+        'block_mathsyntaxhelp/tabledensity',
+        get_string('setting_tabledensity', 'block_mathsyntaxhelp'),
+        get_string('setting_tabledensity_desc', 'block_mathsyntaxhelp'),
+        'normal',
+        [
+            'normal' => get_string('setting_tabledensity_normal', 'block_mathsyntaxhelp'),
+            'compact' => get_string('setting_tabledensity_compact', 'block_mathsyntaxhelp'),
+        ]
+    ));
+
+    // Entry table row style.
+    $settings->add(new admin_setting_configselect(
+        'block_mathsyntaxhelp/rowstyle',
+        get_string('setting_rowstyle', 'block_mathsyntaxhelp'),
+        get_string('setting_rowstyle_desc', 'block_mathsyntaxhelp'),
+        'striped',
+        [
+            'striped' => get_string('setting_rowstyle_striped', 'block_mathsyntaxhelp'),
+            'plain' => get_string('setting_rowstyle_plain', 'block_mathsyntaxhelp'),
+        ]
+    ));
+
     // Default block contents.
     $settings->add(new admin_setting_syntaxtranslations(
         'block_mathsyntaxhelp/defaultcontent',

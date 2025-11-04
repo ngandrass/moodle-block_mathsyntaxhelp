@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die(); // @codeCoverageIgnore
 
 $plugin->component = 'block_mathsyntaxhelp';
 $plugin->release = '0.0.1';
-$plugin->version = 2025102900;
+$plugin->version = 2025102901;
 $plugin->requires = 2022112800;
 $plugin->supported = [401, 501]; // X meta-supported-moodle{4.1 - 5.1} meta-supported-php{7.4 - 8.4}.
 $plugin->maturity = MATURITY_ALPHA;

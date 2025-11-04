@@ -43,6 +43,14 @@ $string['customize_block_entries'] = 'Einträge dieses Blocks anpassen';
 $string['customize_block_entries_help'] = 'Wenn die lokale Anpassung aktiviert ist, zeigt diese einzelne Blockinstanz die unten konfigurierten Einträge anstelle der standardmäßigen Einträge an. Die leeren Zeilen können verwendet werden um neue Werte hinzuzufügen. Wenn mehr Zeilen benötigt werden, speichern Sie einfach die aktuellen Einträge und es werden danach zusätzliche leere Zeilen angezeigt. Um Einträge zu entfernen, leeren Sie die jeweiligen Felder. Die leeren Zeilen werden beim Speichern entfernt. Um zu den globalen Standardeinträgen zurückzukehren, deaktivieren Sie einfach die Anpassung mit dem obigen Kontrollkästchen und klicken Sie auf Speichern.';
 $string['setting_defaultcontent'] = 'Standardeinträge';
 $string['setting_defaultcontent_desc'] = 'Die Einträge, die jeder Formeleingabehilfe-Block standardmäßig anzeigt. Dies kann für eine einzelne Blockinstanz geändert oder als Standard belassen werden. Die leeren Zeilen können verwendet werden um neue Einträge hinzuzufügen. Wenn mehr Zeilen benötigt werden, speichern Sie einfach die aktuellen Einträge und es werden danach zusätzliche leere Zeilen angezeigt. Um Einträge zu entfernen, leeren Sie die jeweiligen Felder. Die leeren Zeilen werden beim Speichern entfernt.';
+$string['setting_rowstyle'] = 'Stil der Einträge';
+$string['setting_rowstyle_desc'] = 'Steuert die Hintergrundfarben der Zeilen.';
+$string['setting_rowstyle_plain'] = 'Monoton';
+$string['setting_rowstyle_striped'] = 'Gestreift';
+$string['setting_tabledensity'] = 'Dichte der Einträge';
+$string['setting_tabledensity_compact'] = 'Kompakt';
+$string['setting_tabledensity_desc'] = 'Steuert wie kompakt die Einträge im Block angezeigt werden, also wie viel Höhe jede Zeile der Einträge einnimmt.';
+$string['setting_tabledensity_normal'] = 'Normal';
 
 // Privacy.
 $string['privacy:metadata'] = 'Der Formeleingabehilfe-Block speichert keine personenbezogenen Daten.';

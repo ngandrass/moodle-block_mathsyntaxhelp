@@ -21,6 +21,8 @@
 
     Example context (json):
     {
+        "dense": false,
+        "striped": true,
         "content": [
             {
                 "mathjax": "\\(\\log_e(y)\\): \)",
@@ -34,7 +36,7 @@
     }
 }}
 
-<table class="table table-hover">
+<table class="table table-hover {{#dense}}table-sm{{/dense}} {{#striped}}table-striped{{/striped}}">
     <thead>
         <tr>
             <th scope="col" class="border-top-0">{{#str}} math_expression, block_mathsyntaxhelp {{/str}}</th>

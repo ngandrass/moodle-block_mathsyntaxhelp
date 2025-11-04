@@ -7,4 +7,5 @@
 - Allow entry customization for single block instances
 - Allow control of block customization via capabilities (`block/mathsyntaxhelp:customize`)
 - Convenient reset to global site-wide default entries
+- Enable customization of display density and entry background colors
 - Provide German and English localizations

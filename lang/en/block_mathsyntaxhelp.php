@@ -43,6 +43,14 @@ $string['customize_block_entries'] = 'Customize this blocks entries';
 $string['customize_block_entries_help'] = 'If customization is enabled, this single block instance will display the below configured entries instead of the site-wide default entries. You can use the empty rows to add new values. If you need more rows, just save the current settings and additional empty rows will appear. To remove entries simply empty the respective fields and the empty rows will be removed upon saving. To revert back to the global default entries, simply disable customization using the checkbox above and hit save.';
 $string['setting_defaultcontent'] = 'Default entries';
 $string['setting_defaultcontent_desc'] = 'The default entries each math syntax help block will display unless customized. This can be changed for an individual block instance or left as the default. You can use the empty rows to add new values. If you need more rows, just save the current settings and additional empty rows will appear. To remove entries simply empty the respective fields and the empty rows will be removed upon saving.';
+$string['setting_rowstyle'] = 'Entry table row style';
+$string['setting_rowstyle_desc'] = 'Controls the background colors of the rows.';
+$string['setting_rowstyle_plain'] = 'Plain';
+$string['setting_rowstyle_striped'] = 'Striped';
+$string['setting_tabledensity'] = 'Entry table density';
+$string['setting_tabledensity_compact'] = 'Compact';
+$string['setting_tabledensity_desc'] = 'Controls how compact the entry table will be displayed, i.e., how much height is used by each row of the entry table.';
+$string['setting_tabledensity_normal'] = 'Normal';
 
 // Privacy.
 $string['privacy:metadata'] = 'The Math Syntax Help block plugin does not store any personal data.';

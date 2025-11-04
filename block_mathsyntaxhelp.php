@@ -97,7 +97,11 @@ class block_mathsyntaxhelp extends block_base {
         $this->content = (object) [
             'text' => $OUTPUT->render_from_template(
                 'block_mathsyntaxhelp/block',
-                ["content" => $formulahelpdata]
+                [
+                    'dense' => (get_config('block_mathsyntaxhelp', 'tabledensity') ?: 'normal') === 'compact',
+                    'striped' => (get_config('block_mathsyntaxhelp', 'rowstyle') ?: 'striped') === 'striped',
+                    'content' => $formulahelpdata,
+                ]
             ),
             'footer' => '',
         ];
