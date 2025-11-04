@@ -103,6 +103,11 @@ class admin_setting_syntaxtranslations extends \admin_setting {
      * @throws \coding_exception
      */
     public function write_setting($data) {
+        // Validate input.
+        if (!isset($data) || !is_iterable($data)) {
+            return $this->config_write($this->name, '') ? '' : get_string('errorsetting', 'admin');
+        }
+
         // Convert form data to compact format for storage.
         $translations = [];
         foreach ($data as $entry) {
