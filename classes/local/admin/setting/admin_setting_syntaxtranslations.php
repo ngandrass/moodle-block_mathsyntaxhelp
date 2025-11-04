@@ -16,10 +16,12 @@
 
 namespace block_mathsyntaxhelp\local\admin\setting;
 
-use core\exception\moodle_exception;
-
 // phpcs:ignore
 defined('MOODLE_INTERNAL') || die(); // @codeCoverageIgnore
+
+global $CFG;
+
+require_once($CFG->libdir . '/adminlib.php');
 
 
 /**
@@ -51,7 +53,7 @@ class admin_setting_syntaxtranslations extends \admin_setting {
      * @param mixed $data array or string depending on setting
      * @param string $query
      * @return string
-     * @throws moodle_exception
+     * @throws \moodle_exception
      */
     public function output_html($data, $query = '') {
         global $OUTPUT;

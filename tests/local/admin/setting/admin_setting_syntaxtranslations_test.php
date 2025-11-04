@@ -32,7 +32,7 @@ final class admin_setting_syntaxtranslations_test extends \advanced_testcase {
     /**
      * Tests rendering of the HTML output for the setting.
      *
-     * @covers \block_mathsyntaxhelp\local\admin\setting\admin_setting_syntaxtranslations
+     * @covers admin_setting_syntaxtranslations
      *
      * @return void
      * @throws \core\exception\moodle_exception
@@ -66,7 +66,7 @@ final class admin_setting_syntaxtranslations_test extends \advanced_testcase {
     /**
      * Tests reading and writing the settings value.
      *
-     * @covers \block_mathsyntaxhelp\local\admin\setting\admin_setting_syntaxtranslations
+     * @covers admin_setting_syntaxtranslations
      *
      * @return void
      * @throws \coding_exception
@@ -107,7 +107,7 @@ final class admin_setting_syntaxtranslations_test extends \advanced_testcase {
     /**
      * Tests writing an invalid setting value.
      *
-     * @covers \block_mathsyntaxhelp\local\admin\setting\admin_setting_syntaxtranslations
+     * @covers admin_setting_syntaxtranslations
      *
      * @return void
      * @throws \coding_exception
