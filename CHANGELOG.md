@@ -1,6 +1,6 @@
 # Changelog
 
-## Version X.Y.Z (YYYYMMDDXX)
+## Version 1.1.0 (2025120400)
 
 - Add vertical line in the middle of the syntax table to increase readability
 - Shorten English translation "Math Expression" to "Expression" to increase readability of entries
