@@ -5,6 +5,7 @@
 - Add vertical line in the middle of the syntax table to increase readability
 - Shorten English translation "Math Expression" to "Expression" to increase readability of entries
 - Add missing brackets default entry for arcsin function
+- Optimize entry table ending to improve appearance
 
 
 ## Version 1.0.0 (2025110400)
