@@ -73,7 +73,7 @@ if ($hassiteconfig) {
             ['out' => "\\( \\sin(x) \\)", 'in' => "sin(x)"],
             ['out' => "\\( \\cos(2y) \\)", 'in' => "cos(2*y)"],
             ['out' => "\\( \\tan(z + 3) \\)", 'in' => "tan(z+3)"],
-            ['out' => "\\( \\arcsin x \\)", 'in' => "asin(x)"],
+            ['out' => "\\( \\arcsin(x) \\)", 'in' => "asin(x)"],
             ['out' => "\\( \\arccos(2y) \\)", 'in' => "acos(2*y)"],
             ['out' => "\\( \\arctan(z + 3) \\)", 'in' => "atan(z+3)"],
             ['out' => "\\( e^x, \\exp(x) \\)", 'in' => "e^x, exp(x)"],

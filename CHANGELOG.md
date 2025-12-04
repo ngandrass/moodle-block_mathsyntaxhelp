@@ -1,5 +1,10 @@
 # Changelog
 
+## Version X.Y.Z (YYYYMMDDXX)
+
+- Add missing brackets default entry for arcsin function
+
+
 ## Version 1.0.0 (2025110400)
 
 - Initial Release 🚀
