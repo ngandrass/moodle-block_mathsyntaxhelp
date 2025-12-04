@@ -2,6 +2,7 @@
 
 ## Version X.Y.Z (YYYYMMDDXX)
 
+- Add vertical line in the middle of the syntax table to increase readability
 - Add missing brackets default entry for arcsin function
 
 

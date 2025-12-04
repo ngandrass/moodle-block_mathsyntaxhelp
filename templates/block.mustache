@@ -39,14 +39,14 @@
 <table class="table table-hover {{#dense}}table-sm{{/dense}} {{#striped}}table-striped{{/striped}}">
     <thead>
         <tr>
-            <th scope="col" class="border-top-0">{{#str}} math_expression, block_mathsyntaxhelp {{/str}}</th>
+            <th scope="col" class="border-top-0 border-end">{{#str}} math_expression, block_mathsyntaxhelp {{/str}}</th>
             <th scope="col" class="border-top-0">{{#str}} input_syntax, block_mathsyntaxhelp {{/str}}</th>
         </tr>
     </thead>
     <tbody>
         {{#content}}
             <tr>
-                <td>{{{mathjax}}}</td>
+                <td class="border-end">{{{mathjax}}}</td>
                 <td><code class="text-body">{{{syntax}}}</code></td>
             </tr>
         {{/content}}
