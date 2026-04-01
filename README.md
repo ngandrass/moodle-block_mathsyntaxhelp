@@ -102,7 +102,7 @@ Please do not use the comments section within the Moodle plugin directory. Thank
 
 ## License
 
-2025 Niels Gandraß <niels@gandrass.de>
+2026 Niels Gandraß <niels@gandrass.de>
 
 This program is free software: you can redistribute it and/or modify it under
 the terms of the GNU General Public License as published by the Free Software
