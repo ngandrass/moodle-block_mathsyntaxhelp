@@ -1,5 +1,10 @@
 # Changelog
 
+## Version X.Y.Z (YYYYMMDDXX)
+
+- Ensure Moodle 5.2 compatibility
+
+
 ## Version 1.1.0 (2025120400)
 
 - Add vertical line in the middle of the syntax table to increase readability
