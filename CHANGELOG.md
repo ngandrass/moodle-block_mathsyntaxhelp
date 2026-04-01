@@ -1,6 +1,6 @@
 # Changelog
 
-## Version X.Y.Z (YYYYMMDDXX)
+## Version 1.2.0 (2026040100)
 
 - Ensure Moodle 5.2 compatibility
 
