@@ -19,9 +19,9 @@ A Moodle block that displays a configurable list of common math input syntax exa
 equivalents. This block serves as a quick reference guide for users when entering mathematical expressions in Moodle,
 especially in conjunction with [STACK](https://stack-assessment.org/).
 
-The math syntax help block is available via the [Moodle plugin directory](https://moodle.org/plugins/block_mathsyntaxhelp):
+The math syntax help block is available via the [Moodle plugin directory](https://marketplace.moodle.com/plugins/block_mathsyntaxhelp):
 
-[![Moodle plugin directory](docs/assets/moodle-plugin-directory-button.png)](https://moodle.org/plugins/block_mathsyntaxhelp)
+[![Moodle plugin directory](docs/assets/moodle-plugin-directory-button.png)](https://marketplace.moodle.com/plugins/block_mathsyntaxhelp)
 
 
 ## Features
@@ -58,7 +58,7 @@ executing the upgrade routine afterward.
 
 ### Installing via the site administration (uploaded ZIP file)
 
-1. Download the latest release of this plugin from the [Moodle plugin directory](https://moodle.org/plugins/block_mathsyntaxhelp).
+1. Download the latest release of this plugin from the [Moodle plugin directory](https://marketplace.moodle.com/plugins/block_mathsyntaxhelp).
 2. Log in to your Moodle site as an admin and go to _Site administration > Plugins > Install plugins_.
 3. Upload the ZIP file with the plugin code.
 4. Check the plugin validation report and finish the installation.
