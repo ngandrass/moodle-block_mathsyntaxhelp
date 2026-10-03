@@ -6,9 +6,12 @@ on:
   pull_request:
     branches: [ "master", "develop" ]
 
+permissions:
+  contents: read
+
 jobs:
   test:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
 
     services:
       postgres:
@@ -78,7 +81,7 @@ jobs:
           - { moodle-branch: 'MOODLE_503_STABLE', php: '8.4', database: 'mariadb' }
     steps:
       - name: Check out repository code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           path: plugin
 
