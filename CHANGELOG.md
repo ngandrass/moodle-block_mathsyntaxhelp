@@ -1,5 +1,11 @@
 # Changelog
 
+## Version X.Y.Z (YYYYMMDDNN)
+
+- Ensure Moodle 5.3 compatibility
+- Fix font color of rendered MathJax expressions in Moodle >= 5.3
+
+
 ## Version 1.2.0 (2026040100)
 
 - Ensure Moodle 5.2 compatibility

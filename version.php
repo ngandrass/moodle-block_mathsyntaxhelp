@@ -29,5 +29,5 @@ $plugin->component = 'block_mathsyntaxhelp';
 $plugin->release = '1.2.0';
 $plugin->version = 2026040100;
 $plugin->requires = 2022112800;
-$plugin->supported = [401, 502]; // X meta-supported-moodle{4.1 - 5.2} meta-supported-php{7.4 - 8.4}.
+$plugin->supported = [401, 503]; // X meta-supported-moodle{4.1 - 5.3} meta-supported-php{7.4 - 8.4}.
 $plugin->maturity = MATURITY_STABLE;
